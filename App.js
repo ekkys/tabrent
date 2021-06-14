@@ -4,10 +4,10 @@ import Home from './src/screens/home';
 import List from './src/screens/list';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 const Tab = createBottomTabNavigator ();
-
 function App() {
   return (
     <NavigationContainer>
@@ -30,7 +30,6 @@ function App() {
 
             // You can return any component that you like here!
             return <Ionicons name={iconName} size={size} color={color} />;
-            return ekky_trial ;
           },
         })}
         tabBarOptions={{
